@@ -158,8 +158,8 @@ p{
     margin-top: 25px;
 }
 .contactus{
+    height: 500px;
     margin-top: 50px;
-    margin-bottom: 40px;
     border-bottom: 4px solid #49A37B;
 }
 .contactus h2{
@@ -170,5 +170,69 @@ p{
     margin-bottom: 30px;
 }
 .contactus div{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+.inputname{
+    width: 45%;
+    height: 30px;
+    margin-right: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: white;
+}
+.inputemail{
+    width: 45%;
+    height: 30px;
+    margin-left: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+}
+.contactusselect{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: grey;
+}
+.contactusmessage{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.contactustext{
+    display: block;
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: 40px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+.contactusbottons{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.submit{
+    background-color: #49A37B;
+    border-radius: 5px;
+    border: 1px solid #49A37B;
+    width: 65px;
+    height: 30px;
+    margin-right: 10px;
+    color: white;
+}
+.reset{
+    background-color: #F13312;
+    border-radius: 5px;
+    border: 1px solid #F13312;
+    width: 65px;
+    height: 30px;
+    color: white;
+
 }
