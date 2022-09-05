@@ -3,6 +3,7 @@ body{
     background-color: #373867;
     font-family: "Roboto", sans-serif;
     color: #FFFFFF;
+    font-weight: 400;
 }
 aside {
     float: left;
@@ -21,7 +22,14 @@ section{
     margin-right: 5%;
 }
 h2{
-font-size: 20px;
+font-size: 30px;
+font-weight: 700;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 12px;
 }
 .header{
     border-bottom: 4px solid #49A37B ;
@@ -29,19 +37,20 @@ font-size: 20px;
 .header>h1{
     display:inline-block;
     font-size: 40px;
+    font-weight: 700;
 }
 .header>h2{
     display: inline;
     position: relative;
     left: 110px;
     font-size: 12px;
+    font-weight: 400;
 }
 .s1{
     border-bottom: 4px solid #49A37B ;
     padding-bottom: 80px;
 }
 .s1>h2{
-    font-size: 30px;
     position: relative;
     top: 30px;
 }
@@ -49,6 +58,7 @@ font-size: 20px;
     font-size: 20px;
     position: relative;
     top: 30px;
+    font-weight: 400;
 }
 .img-s1{
     float: right;
@@ -84,4 +94,148 @@ font-size: 20px;
     border-radius: 5px;
     padding: 14px 36px;
     text-decoration: none;
+}
+.s2{
+    position: relative;
+    top: 50px;
+}
+.h2-s2>h2{
+    border-bottom: 4px solid #49A37B ;
+    display: inline;
+    top: 30px;
+}
+.div1-s2{
+    position: relative;
+    float: left;
+    width: 45%;
+    top: 70px;
+}
+.div1-s2>img{
+    position: relative;
+    display: inline;
+    float: left;
+    width: 20%;
+    top: 25px;
+}
+.div1-s2>h3{
+    display: inline;
+    float: right;
+    width: 75%;
+}
+.div1-s2>p{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 75%;
+    bottom: 20px;
+}
+.div2-s2{
+    position: relative;
+    float: right;
+    width: 45%;
+    top: 70px;
+}
+.div2-s2>img{
+    position: relative;
+    display: inline;
+    float: left;
+    width: 20%;
+    top: 25px;
+}
+.div2-s2>h3{
+    display: inline;
+    float: right;
+    width: 75%;
+}
+.div2-s2>p{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 75%;
+    bottom: 20px;
+}
+.div3-s2{
+    position: relative;
+    float: left;
+    width: 45%;
+    top: 120px;
+}
+.div3-s2>img{
+    position: relative;
+    display: inline;
+    float: left;
+    width: 20%;
+    top: 25px;
+}
+.div3-s2>h3{
+    display: inline;
+    float: right;
+    width: 75%;
+}
+.div3-s2>p{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 75%;
+    bottom: 20px;
+}
+.div4-s2{
+    position: relative;
+    bottom: 100px;
+    float: right;
+    width: 45%;
+    top: 120px;
+}
+.div4-s2>img{
+    position: relative;
+    display: inline;
+    float: left;
+    width: 20%;
+    top: 25px;
+}
+.div4-s2>h3{
+    display: inline;
+    float: right;
+    width: 75%;
+}
+.div4-s2>p{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 75%;
+    bottom: 20px;
+}
+.s3{
+    position: relative;
+    top: 540px;
+    border-top: 4px solid #49A37B ;
+}
+.s3>h2{
+    border-bottom: 4px solid #49A37B ;
+    position: relative;
+    display: inline;
+    bottom: 250px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+.s4{
+    position: relative;
+    top: 1200px
+}
+.s5{
+    position: relative;
+    top: 1600px;
+}
+.s6{
+    position: relative;
+    top: 2000px;
 }
