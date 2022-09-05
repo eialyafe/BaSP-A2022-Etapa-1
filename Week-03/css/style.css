@@ -41,46 +41,41 @@ p{
 }
 .header>h2{
     display: inline;
-    position: relative;
-    left: 110px;
+    margin-left: 50px;
     font-size: 12px;
     font-weight: 400;
 }
-.s1{
+.timetracker{
     border-bottom: 4px solid #49A37B ;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
-.s1>h2{
-    position: relative;
-    top: 30px;
+.timetracker>h2{
+    margin-top: 50px;
 }
-.s1>h3{
+.timetracker>h3{
     font-size: 20px;
-    position: relative;
-    top: 30px;
+    margin-top: 15px;
     font-weight: 400;
 }
-.img-s1{
-    float: right;
-    width: 45%;
+.img-timetracker{
     position: relative;
-    bottom: 120px;
+    float: right;
+    width: 500px;
+    bottom: 100px;
     left: 50px;
 
 }
-.p-s1{
+.p-timetracker{
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
-    position: relative;
-    width: 40%;
+    width: 45%;
     min-width: 350px;
-    margin-bottom: 30px;
-    top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.s1>a{
-    position: relative;
+.timetracker>a{
     top: 50px;
     width: 156px;
     height: 46px;
@@ -95,147 +90,85 @@ p{
     padding: 14px 36px;
     text-decoration: none;
 }
-.s2{
-    position: relative;
-    top: 50px;
+.functions{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #49A37B;
 }
-.h2-s2>h2{
+.functions>div{
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 50px;
+}
+.functions>h2{
+    display: block;
     border-bottom: 4px solid #49A37B ;
-    display: inline;
-    top: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: fit-content;
 }
-.div1-s2{
-    position: relative;
+.left{
+    margin-right: 30px;
+}
+.functions img{
     float: left;
-    width: 45%;
-    top: 70px;
+    margin-right: 10px;
 }
-.div1-s2>img{
-    position: relative;
-    display: inline;
-    float: left;
-    width: 20%;
-    top: 25px;
+.functions h3{
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.div1-s2>h3{
-    display: inline;
-    float: right;
-    width: 75%;
+.tracktimewithtrackgenix{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #49A37B;
 }
-.div1-s2>p{
-    position: relative;
-    display: inline;
-    float: right;
-    width: 75%;
-    bottom: 20px;
-}
-.div2-s2{
-    position: relative;
-    float: right;
-    width: 45%;
-    top: 70px;
-}
-.div2-s2>img{
-    position: relative;
-    display: inline;
-    float: left;
-    width: 20%;
-    top: 25px;
-}
-.div2-s2>h3{
-    display: inline;
-    float: right;
-    width: 75%;
-}
-.div2-s2>p{
-    position: relative;
-    display: inline;
-    float: right;
-    width: 75%;
-    bottom: 20px;
-}
-.div3-s2{
-    position: relative;
-    float: left;
-    width: 45%;
-    top: 120px;
-}
-.div3-s2>img{
-    position: relative;
-    display: inline;
-    float: left;
-    width: 20%;
-    top: 25px;
-}
-.div3-s2>h3{
-    display: inline;
-    float: right;
-    width: 75%;
-}
-.div3-s2>p{
-    position: relative;
-    display: inline;
-    float: right;
-    width: 75%;
-    bottom: 20px;
-}
-.div4-s2{
-    position: relative;
-    bottom: 100px;
-    float: right;
-    width: 45%;
-    top: 120px;
-}
-.div4-s2>img{
-    position: relative;
-    display: inline;
-    float: left;
-    width: 20%;
-    top: 25px;
-}
-.div4-s2>h3{
-    display: inline;
-    float: right;
-    width: 75%;
-}
-.div4-s2>p{
-    position: relative;
-    display: inline;
-    float: right;
-    width: 75%;
-    bottom: 20px;
-}
-.s3{
-    position: relative;
-    top: 540px;
-    border-top: 4px solid #49A37B ;
-}
-.s3>h2{
+.tracktimewithtrackgenix>h2{
+    display: block;
     border-bottom: 4px solid #49A37B ;
-    position: relative;
-    display: inline;
-    bottom: 250px;
-    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: fit-content;
 }
-
-
-
-
-
-
-
-
-
-
-.s4{
-    position: relative;
-    top: 1200px
+.tracktimewithtrackgenix div{
+    display: inline-block;
+    width: 22%;
+    height: 160px;
+    margin-right: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #373867;
+    background-color: #FFFFFF;
+    border-radius: 10px;
 }
-.s5{
-    position: relative;
-    top: 1600px;
+.tracktimewithtrackgenix h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-.s6{
-    position: relative;
-    top: 2000px;
+.tracktimewithtrackgenix img{
+    float: right;
+    margin-top: 15px;
+    margin-right: 25px;
+}
+.tracktimewithtrackgenix p{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.contactus{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #49A37B;
+}
+.contactus h2{
+    display: block;
+    width: fit-content;
+    border-bottom: 4px solid #49A37B ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contactus div{
+    margin-bottom: 100px;
 }
