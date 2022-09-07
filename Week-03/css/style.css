@@ -9,6 +9,7 @@ aside {
     float: left;
     width: 30%;
     height: 100%;
+    margin-top: 40px;
 }
 main {
     float: right;
@@ -47,48 +48,47 @@ p{
     font-weight: 400;
 }
 .timetracker{
-    border-bottom: 4px solid #49A37B ;
     padding-bottom: 20px;
+    border-bottom: 4px solid #49A37B ;
 }
 .timetracker>h2{
     margin-top: 50px;
 }
 .timetracker>h3{
-    font-size: 20px;
     margin-top: 15px;
     font-weight: 400;
+    font-size: 20px;
 }
 .img-timetracker{
     position: relative;
-    float: right;
-    width: 500px;
     bottom: 100px;
     left: 50px;
-
+    float: right;
+    width: 500px;
 }
 .p-timetracker{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: justify;
     width: 45%;
     min-width: 350px;
     margin-top: 40px;
     margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
 }
 .timetracker>a{
     top: 50px;
     width: 156px;
     height: 46px;
+    padding: 14px 36px;
+    background-color: #49a37b;
+    border-radius: 5px;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    background-color: #49a37b;
-    border-radius: 5px;
-    padding: 14px 36px;
     text-decoration: none;
 }
 .functions{
@@ -103,10 +103,10 @@ p{
 }
 .functions>h2{
     display: block;
-    border-bottom: 4px solid #49A37B ;
+    width: fit-content;
     margin-top: 30px;
     margin-bottom: 50px;
-    width: fit-content;
+    border-bottom: 4px solid #49A37B ;
 }
 .left{
     margin-right: 30px;
@@ -292,6 +292,15 @@ p{
 .list ol{
     list-style: decimal;
 }
+.product{
+    margin: -5px;
+}
+.company{
+    margin: -15px;
+}
+.support{
+    margin: -20px;
+}
 .generaldivlists{
     width: fit-content;
     margin-left: auto;
@@ -311,12 +320,94 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-.mediaslogos img{
-    background-color: black;
-}
 .footer2 p{
     margin-top: 20px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+.search input{
+    margin-left: 65px;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #262862;
+    border: 1px solid #49A37B;
+}
+.search button{
+    position: relative;
+    top: 2px;
+    right: 34px;
+    background-color: transparent;
+    border: none;
+}
+.secondsidebar{
+    background-color: #262862;
+    margin-top: 25px;
+    width: 100%;
+    height: 3000px;
+}
+.sidebarlist a{
+    display: block;
+    width: 85%;
+    color: #FFFFFF;
+    font-size: 17px;
+    border-bottom: 2px solid #49A37B;
+    padding-top: 60px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.getintouch{
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.getintouch h3{
+    margin-bottom: 40px;
+    border-bottom: 4px solid #49A37B;
+}
+.getintouch p{
+    font-size: 14px;
+    text-align: justify;
+}
+.contactdata{
+    margin-top: 100px;
+}
+.contactdata p{
+    display: inline;
+    font-size: 14px;
+    margin-left: 70px;
+}
+.addressdata{
+    border-bottom: 2px solid #49A37B;
+}
+.addressdata img{
+    margin-left: -10px;
+}
+.addressdata p{
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+.emaildata{
+    margin-top: 60px;
+    border-bottom: 2px solid #49A37B;
+}
+.emaildata img{
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+.emaildata p{
+    position: relative;
+    bottom: 20px;
+}
+.phonedata{
+    margin-top: 60px;
+}
+.phonedata img{
+    margin-bottom: 15px;
+}
+.phonedata p{
+    position: relative;
+    bottom: 25px;
 }
