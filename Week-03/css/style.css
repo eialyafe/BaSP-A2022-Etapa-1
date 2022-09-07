@@ -126,10 +126,10 @@ p{
 }
 .tracktimewithtrackgenix>h2{
     display: block;
-    border-bottom: 4px solid #49A37B ;
+    width: fit-content;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: fit-content;
+    border-bottom: 4px solid #49A37B ;
 }
 .tracktimewithtrackgenix div{
     display: inline-block;
@@ -166,9 +166,9 @@ p{
 .contactus h2{
     display: block;
     width: fit-content;
-    border-bottom: 4px solid #49A37B ;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-bottom: 4px solid #49A37B ;
 }
 .contactus div{
     margin-bottom: 50px;
@@ -193,10 +193,10 @@ p{
 .contactusselect{
     display: block;
     width: 100%;
-    background-color: transparent;
     height: 30px;
     border-radius: 5px;
     border: 1px solid #FFFFFF;
+    background-color: transparent;
     color: grey;
 }
 .contactusmessage{
@@ -210,9 +210,9 @@ p{
     display: block;
     height: 130px;
     width: 100%;
+    background-color: transparent;
     border-radius: 5px;
     border-bottom: 40px;
-    background-color: transparent;
     border: 1px solid #FFFFFF;
 }
 .contactusbottons{
@@ -220,20 +220,20 @@ p{
     margin-bottom: 40px;
 }
 .submit{
-    background-color: #49A37B;
-    border-radius: 5px;
-    border: 1px solid #49A37B;
     width: 65px;
     height: 30px;
     margin-right: 10px;
+    background-color: #49A37B;
+    border-radius: 5px;
+    border: 1px solid #49A37B;
     color: white;
 }
 .reset{
+    width: 65px;
+    height: 30px;
     background-color: #F13312;
     border-radius: 5px;
     border: 1px solid #F13312;
-    width: 65px;
-    height: 30px;
     color: white;
 }
 .aboutus{
@@ -245,9 +245,9 @@ p{
 .aboutus h2{
     display: block;
     width: fit-content;
-    border-bottom: 4px solid #49A37B ;
     margin-top: 30px;
     margin-bottom: 60px;
+    border-bottom: 4px solid #49A37B ;
 }
 .aboutus h3{
     margin-bottom: 20px;
@@ -268,9 +268,9 @@ p{
 }
 .p1{
     float: right;
+    width: 50%;
     margin-right: 200px;
     margin-top: 50px;
-    width: 50%;
 }
 .p2{
     float: left;
@@ -315,47 +315,47 @@ p{
     font-size: 16px;
 }
 .mediaslogos{
-    margin-top: 30px;
     width: fit-content;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 .footer2 p{
-    margin-top: 20px;
     width: fit-content;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 .search input{
-    margin-left: 65px;
     width: 60%;
     height: 40px;
-    border-radius: 5px;
+    margin-left: 65px;
     background-color: #262862;
+    border-radius: 5px;
     border: 1px solid #49A37B;
 }
 .search button{
     position: relative;
-    top: 2px;
-    right: 34px;
+    top: 9px;
+    right: 45px;
     background-color: transparent;
     border: none;
 }
 .secondsidebar{
-    background-color: #262862;
-    margin-top: 25px;
     width: 100%;
     height: 3000px;
+    margin-top: 25px;
+    background-color: #262862;
 }
 .sidebarlist a{
     display: block;
     width: 85%;
-    color: #FFFFFF;
-    font-size: 17px;
-    border-bottom: 2px solid #49A37B;
     padding-top: 60px;
     margin-left: 20px;
+    border-bottom: 2px solid #49A37B;
+    font-size: 17px;
     text-decoration: none;
+    color: #FFFFFF;
 }
 .getintouch{
     margin-top: 100px;
@@ -375,8 +375,8 @@ p{
 }
 .contactdata p{
     display: inline;
-    font-size: 14px;
     margin-left: 70px;
+    font-size: 14px;
 }
 .addressdata{
     border-bottom: 2px solid #49A37B;
@@ -406,8 +406,10 @@ p{
 }
 .phonedata img{
     margin-bottom: 15px;
+    margin-left: 8px;
 }
 .phonedata p{
     position: relative;
     bottom: 25px;
+    right: 8px;
 }
