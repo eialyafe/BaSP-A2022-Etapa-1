@@ -8,12 +8,6 @@ section{
     border-bottom: 4px solid #49A37B ;
 }
 
-footer {
-    width: 90%;
-    margin: auto;
-    border-bottom: 4px solid #49A37B ;
-}
-
 .timetracker {
     display: flex;
     flex-direction: column;
@@ -21,7 +15,27 @@ footer {
     border-bottom: 4px solid #49A37B ;
 }
 
-.btn-learn-more {
+.timetracker img{
+    margin-top: 60px;
+}
+.timetracker-container {
+    margin-bottom: 40px;
+}
+
+.timetracker h2 {
+    font-size: 30px;
+}
+
+.timetracker h3 {
+    font-size: 20px;
+}
+
+.timetracker p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+    .btn-learn-more {
     width: 156px;
     height: 46px;
     padding: 14px 36px;
@@ -36,25 +50,35 @@ footer {
     color: white;
     text-decoration: none;
 }
-.timetracker-text{
-    margin-bottom: 40px;
+
+.about-us-first-container {
+    display: flex;
+    /* background-color: red; */
 }
-.timetracker h2 {
-    font-size: 30px;
+
+.about-us-first-h-p-container {
+    width: 65%;
 }
-.timetracker h3{
-    font-size: 20px;
+
+.about-us-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    margin-left: 15px;
 }
-.timetracker p{
-    font-size: 20px;
+
+.about-us-last-three-h-p-img-container {
+    display: none;
 }
-.footer1{
+
+.footer1 {
     display: flex;
     flex-direction: column;
 }
 
-@media (min-width:1024px){
-    main{
+@media (min-width:1024px) {
+    main {
         width: 70%;
         float: right;
     }
@@ -64,11 +88,12 @@ footer {
     .timetracker p {
         width: 85%;
     }
-    .timetracker img{
+    .timetracker img {
         width: 35%;
         margin-top: 10px;
         margin-bottom: 15px;
     }
+
     .footer1 {
         display: flex;
         flex-direction: row;

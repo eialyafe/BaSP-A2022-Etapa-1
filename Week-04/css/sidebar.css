@@ -27,7 +27,7 @@ aside{
         border: none;
     }
 
-    .secondsidebar{
+    .second-sidebar{
         width: 100%;
         height: 3000px;
         margin-top: 25px;
@@ -45,18 +45,18 @@ aside{
         color: #FFFFFF;
     }
 
-    .getintouch{
+    .get-in-touch-container {
         margin-top: 100px;
         margin-right: 40px;
         margin-left: 20px;
     }
 
-    .getintouch h3{
+    .get-in-touch-container h3{
         margin-bottom: 40px;
         border-bottom: 4px solid #49A37B;
     }
 
-    .getintouch p{
+    .get-in-touch-container p{
         font-size: 14px;
         text-align: justify;
     }
@@ -71,44 +71,44 @@ aside{
         font-size: 14px;
     }
 
-    .addressdata{
+    .address-data-container {
         border-bottom: 2px solid #49A37B;
     }
 
-    .addressdata img{
+    .address-data-container img{
         margin-left: -10px;
     }
 
-    .addressdata p{
+    .address-data-container p{
         position: relative;
         bottom: 20px;
         right: 20px;
     }
 
-    .emaildata{
+    .email-data-container{
         margin-top: 60px;
         border-bottom: 2px solid #49A37B;
     }
 
-    .emaildata img{
+    .email-data-container img{
         margin-bottom: 15px;
         margin-left: 5px;
     }
 
-    .emaildata p{
+    .email-data-container p{
         position: relative;
         bottom: 20px;
     }
 
-    .phonedata{
+    .phone-data-container {
         margin-top: 60px;
     }
 
-    .phonedata img{
+    .phone-data-container img{
         margin-bottom: 15px;
         margin-left: 8px;
     }
-    .phonedata p{
+    .phonedataphone-data-container p{
         position: relative;
         bottom: 25px;
         right: 8px;
