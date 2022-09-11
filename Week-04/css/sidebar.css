@@ -1,0 +1,116 @@
+aside{
+    display: none;
+}
+@media (min-width: 1024px) {
+    aside {
+        display: block;
+        float: left;
+        width: 30%;
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .search input{
+        width: 60%;
+        height: 40px;
+        margin-left: 65px;
+        background-color: #262862;
+        border-radius: 5px;
+        border: 1px solid #49A37B;
+    }
+
+    .search button{
+        position: relative;
+        top: 9px;
+        right: 45px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .secondsidebar{
+        width: 100%;
+        height: 3000px;
+        margin-top: 25px;
+        background-color: #262862;
+    }
+
+    .sidebarlist a{
+        display: block;
+        width: 85%;
+        padding-top: 60px;
+        margin-left: 20px;
+        border-bottom: 2px solid #49A37B;
+        font-size: 17px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .getintouch{
+        margin-top: 100px;
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+
+    .getintouch h3{
+        margin-bottom: 40px;
+        border-bottom: 4px solid #49A37B;
+    }
+
+    .getintouch p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .contactdata{
+        margin-top: 100px;
+    }
+
+    .contactdata p{
+        display: inline;
+        margin-left: 70px;
+        font-size: 14px;
+    }
+
+    .addressdata{
+        border-bottom: 2px solid #49A37B;
+    }
+
+    .addressdata img{
+        margin-left: -10px;
+    }
+
+    .addressdata p{
+        position: relative;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .emaildata{
+        margin-top: 60px;
+        border-bottom: 2px solid #49A37B;
+    }
+
+    .emaildata img{
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .emaildata p{
+        position: relative;
+        bottom: 20px;
+    }
+
+    .phonedata{
+        margin-top: 60px;
+    }
+
+    .phonedata img{
+        margin-bottom: 15px;
+        margin-left: 8px;
+    }
+    .phonedata p{
+        position: relative;
+        bottom: 25px;
+        right: 8px;
+    }
+}

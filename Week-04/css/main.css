@@ -1,0 +1,77 @@
+main {
+    width: 90%;
+    margin: auto;
+    border-bottom: 4px solid #49A37B ;
+}
+
+section{
+    border-bottom: 4px solid #49A37B ;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    border-bottom: 4px solid #49A37B ;
+}
+
+.timetracker {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-bottom: 4px solid #49A37B ;
+}
+
+.btn-learn-more {
+    width: 156px;
+    height: 46px;
+    padding: 14px 36px;
+    background-color: #49a37b;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.timetracker-text{
+    margin-bottom: 40px;
+}
+.timetracker h2 {
+    font-size: 30px;
+}
+.timetracker h3{
+    font-size: 20px;
+}
+.timetracker p{
+    font-size: 20px;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:1024px){
+    main{
+        width: 70%;
+        float: right;
+    }
+    .timetracker {
+        flex-direction: row-reverse;
+    }
+    .timetracker p {
+        width: 85%;
+    }
+    .timetracker img{
+        width: 35%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
