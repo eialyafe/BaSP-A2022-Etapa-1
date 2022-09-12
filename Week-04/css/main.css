@@ -54,6 +54,7 @@ section{
 
 .why-track-time{
     justify-content: center;
+    margin-top: 20%;
     margin-bottom: 5%;
 }
 
@@ -136,8 +137,8 @@ section{
 
 
 .contact-us-btns-container {
-    margin-top: 10%;
-    margin-bottom: 8%;
+    margin-top: 3%;
+    margin-bottom: 15%;
     height: 20%;
 }
 
@@ -160,14 +161,13 @@ section{
     color: white;
 }
 
-
-
-
-
-
-
-
-
+.about-us h2 {
+    margin-top: 15%;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-bottom: 4px solid #49A37B ;
+}
 
 .about-us-first-container {
     display: flex;
@@ -188,6 +188,20 @@ section{
     border-radius: 50px solid white;
     width: 150px;
     height: 100px;
+}
+
+.about-us-second-p-h-container {
+    margin-bottom: 20%;
+}
+
+.about-us-second-p-container{
+    border-left: 2px solid white;
+}
+
+.about-us-second-p-h-container p {
+    margin-left: 5%;
+
+    font-style: italic;
 }
 
 .about-us-last-three-h-p-img-container {
