@@ -1,5 +1,5 @@
 main {
-    width: 90%;
+    width: 80%;
     margin: auto;
     border-bottom: 4px solid #49A37B ;
 }
@@ -18,6 +18,7 @@ section{
 .timetracker img{
     margin-top: 60px;
 }
+
 .timetracker-container {
     margin-bottom: 40px;
 }
@@ -51,26 +52,156 @@ section{
     text-decoration: none;
 }
 
+.why-track-time{
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.why-track-time div {
+    display: inline-block;
+    background-color: white;
+    margin-top: 5%;
+    width: 85%;
+    border-radius: 10px;
+    color: #373867;
+}
+
+.why-track-time h2 {
+    width: fit-content;
+    margin-top: 10%;
+    border-bottom: 4px solid #49A37B;
+}
+
+.why-track-time h3 {
+    margin-left: 10%;
+}
+
+.why-track-time p {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.why-track-time img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.decision-making-container {
+    margin-bottom: 5%;
+}
+
+.contact-us h2 {
+    display: block;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #49A37B ;
+}
+
+.name-email-select-area-container input {
+    margin-bottom: 10%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: white;
+}
+
+.name-email-select-area-container select {
+    margin-bottom: 10%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: grey;
+}
+
+.contact-us-message {
+    display: block;
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact-us-text {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-bottom: 40px;
+    border: 1px solid #FFFFFF;
+}
+
+
+.contact-us-btns-container {
+    margin-top: 10%;
+    margin-bottom: 8%;
+    height: 20%;
+}
+
+.submit-btn {
+    width: 25%;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #49A37B;
+    border-radius: 5px;
+    border: 1px solid #49A37B;
+    color: white;
+}
+
+.reset-btn {
+    width: 25%;
+    height: 30px;
+    background-color: #F13312;
+    border-radius: 5px;
+    border: 1px solid #F13312;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 .about-us-first-container {
     display: flex;
-    /* background-color: red; */
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
 .about-us-first-h-p-container {
-    width: 65%;
+    max-width: 55%;
 }
 
-.about-us-img-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 40%;
-    margin-left: 15px;
+.about-us-first-h-p-container h3 {
+    margin-top: -8px;
+}
+
+.about-us-first-container img {
+    align-self: center;
+    border-radius: 50px solid white;
+    width: 150px;
+    height: 100px;
 }
 
 .about-us-last-three-h-p-img-container {
     display: none;
 }
+
+
+
+
+
+
+
+
+
 
 .footer1 {
     display: flex;
