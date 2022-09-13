@@ -58,12 +58,12 @@ section{
     margin-bottom: 5%;
 }
 
-.why-track-time div {
+.cards-container div {
     justify-content: center;
-    background-color: white;
     margin-top: 5%;
     border-radius: 10px;
     color: #373867;
+    background-color: #FFFFFF;
 }
 
 .why-track-time h2 {
@@ -134,7 +134,6 @@ section{
     border-bottom: 40px;
     border: 1px solid #FFFFFF;
 }
-
 
 .contact-us-btns-container {
     margin-top: 3%;
@@ -210,7 +209,6 @@ section{
     display: none;
 }
 
-
 .footer-lists {
     margin-top: 10%;
     display: flex;
@@ -235,33 +233,106 @@ section{
     padding: 8%;
 }
 
-/* @media (min-width:480) {
+@media (min-width:480px) {
+    .why-track-time {
+        margin-top: 0px;
+        margin-bottom: 10%;
+    }
 
-} */
+    .why-track-time h2 {
+        margin-top: 5%;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+
+    .cards-container  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards-container div {
+        width: 45%;
+        margin: 0;
+        margin-top: 5%;
+    }
+
+    .name-email-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-email-select-area-container input {
+        height: 30px;
+        width: 48%;
+        margin-bottom: 3%;
+    }
+
+    .name-email-select-area-container select {
+        height: 30px;
+        margin-bottom: 3%;
+    }
+
+    .contact-us-message {
+        margin-bottom: 1%;
+    }
+
+    .contact-us-text {
+        height: 100px;
+        width: 99.4%;
+    }
+
+    .contact-us-btns-container {
+        margin-bottom: 7%;
+    }
+
+    .contact-us-btns-container button {
+        width: 10%;
+    }
+
+
+
+
+
+}
+
+
+
+
 
 @media (min-width:1024px) {
     main {
         width: 70%;
         float: right;
     }
+
     main section {
         margin: 5%;
     }
+
     .timetracker {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
+
     .timetracker-container {
         width: 50%;
     }
     .timetracker-container a {
         margin-top: 10%;
     }
+
     .timetracker p {
         width: 100%;
         margin-bottom: 10%;
         text-align: justify;
     }
+
     .timetracker img {
         width: 45%;
         max-width: 45%;
@@ -296,7 +367,8 @@ section{
     }
 
     .why-track-time {
-        margin-top: -8%;
+        margin-top: 0%;
+        background-color: transparent;
     }
 
     .why-track-time div {
@@ -306,14 +378,36 @@ section{
 
     .cards-container {
         display: flex;
-        margin-bottom: 7%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 4%;
     }
 
-    .cards-container div {
+    .boost-and-manage-container {
+        width: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .business-and-decision-container {
+        width: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boost-and-manage-container div {
+        width: 46%;
         margin: 0px;
-        width: 23%;
         background-color: white;
     }
+
+    .business-and-decision-container div {
+        width: 46%;
+        margin: 0px;
+        background-color: white;
+    }
+
     .name-email-container {
         display: flex;
         justify-content: space-between;
@@ -324,7 +418,7 @@ section{
         width: 48%;
         margin-bottom: 3%;
     }
-    
+
     .name-email-select-area-container select {
         height: 30px;
         margin-bottom: 3%;
@@ -346,12 +440,15 @@ section{
     .contact-us-btns-container button {
         width: 10%;
     }
+
     .about-us-first-container {
         display: block;
     }
+
     .about-us-first-h-p-container {
         max-width: 100%;
     }
+
     .about-us-first-img {
         display: none;
     }
@@ -365,8 +462,9 @@ section{
     }
     .about-us-last-three-h-p-img-container {
         display: block;
-        background-color: # F13312;
+        background-color: #F13312;
     }
+
     .about-us-last-three-h-p-img-container h3 {
         width: fit-content;
         height: fit-content;
@@ -397,6 +495,7 @@ section{
         margin-bottom: 7%;
         width: 30%;
     }
+
     .about-us-last-p-container {
         display: flex;
         width: 40%;
@@ -404,4 +503,4 @@ section{
         margin-left: 27%;
         margin-top: -5%;
     }
-
+}

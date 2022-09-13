@@ -10,8 +10,11 @@ aside{
         margin-top: 40px;
         margin-left: -0.6%;
     }
+    .sidebarlist {
+        margin-top: 10%;
+    }
 
-    .search input{
+    .search-input {
         width: 60%;
         height: 40px;
         margin-left: 65px;
@@ -20,7 +23,7 @@ aside{
         border: 1px solid #49A37B;
     }
 
-    .search button{
+    .search-btn {
         position: relative;
         top: 9px;
         right: 45px;
@@ -30,7 +33,7 @@ aside{
 
     .second-sidebar{
         width: 100%;
-        height: 3000px;
+        height: 3500px;
         margin-top: 25px;
         background-color: #262862;
     }
@@ -84,6 +87,7 @@ aside{
         position: relative;
         bottom: 20px;
         right: 20px;
+        margin-left: 10%;
     }
 
     .email-data-container{
@@ -99,14 +103,16 @@ aside{
     .email-data-container p{
         position: relative;
         bottom: 20px;
+        margin-left: 10%;
     }
 
-    .phone-data-container {
+    .phone-data-container p {
         margin-top: 60px;
+        margin-left: 7%;
     }
 
     .phone-data-container img{
-        margin-bottom: 15px;
+        margin-top: 7%;
         margin-left: 8px;
     }
     .phonedataphone-data-container p{
