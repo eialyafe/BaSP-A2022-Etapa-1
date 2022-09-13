@@ -6,7 +6,6 @@ aside{
         display: block;
         float: left;
         width: 30%;
-        height: 100%;
         margin-top: 40px;
         margin-left: -0.6%;
     }
@@ -33,7 +32,7 @@ aside{
 
     .second-sidebar{
         width: 100%;
-        height: 3500px;
+        height: 4100px;
         margin-top: 25px;
         background-color: #262862;
     }

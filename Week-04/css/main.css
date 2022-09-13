@@ -530,9 +530,10 @@ section{
     }
 
     .about-us-fourth-p-img-container img {
-        margin-top: -20%;
+        margin-top: -10%;
         margin-bottom: 7%;
-        width: 30%;
+        /* width: 30%; */
+        max-width: 28%;
     }
 
     .about-us-last-p-container {
