@@ -101,7 +101,7 @@ section{
 
 .name-email-select-area-container input {
     margin-bottom: 10%;
-    width: 98%;
+    width: 98.2%;
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid #FFFFFF;
@@ -111,6 +111,7 @@ section{
 .name-email-select-area-container select {
     margin-bottom: 10%;
     width: 100%;
+    height: 23px;
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid #FFFFFF;
@@ -160,6 +161,9 @@ section{
     color: white;
 }
 
+.about-us-header-thrid {
+    display: none;
+}
 .about-us h2 {
     margin-top: 15%;
     width: fit-content;
@@ -206,6 +210,7 @@ section{
     display: none;
 }
 
+
 .footer-lists {
     margin-top: 10%;
     display: flex;
@@ -230,21 +235,173 @@ section{
     padding: 8%;
 }
 
+/* @media (min-width:480) {
+
+} */
 
 @media (min-width:1024px) {
     main {
         width: 70%;
         float: right;
     }
+    main section {
+        margin: 5%;
+    }
     .timetracker {
         flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .timetracker-container {
+        width: 50%;
+    }
+    .timetracker-container a {
+        margin-top: 10%;
     }
     .timetracker p {
-        width: 85%;
+        width: 100%;
+        margin-bottom: 10%;
+        text-align: justify;
     }
     .timetracker img {
-        width: 35%;
-        margin-top: 10px;
+        width: 45%;
+        max-width: 45%;
+        height: 85%;
+        margin-top: 7%;
         margin-bottom: 15px;
     }
-}
+
+    .functions h2 {
+        width: fit-content;
+        border-bottom: 4px solid #49A37B ;
+    }
+
+    .track-and-reports-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .track-and-reports-container div {
+        width: 40%;
+    }
+
+    .management-and-multipleroles-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .management-and-multipleroles-container div {
+        width: 40%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .why-track-time {
+        margin-top: -8%;
+    }
+
+    .why-track-time div {
+        justify-content: space-between;
+        background-color: transparent;
+    }
+
+    .cards-container {
+        display: flex;
+        margin-bottom: 7%;
+    }
+
+    .cards-container div {
+        margin: 0px;
+        width: 23%;
+        background-color: white;
+    }
+    .name-email-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-email-select-area-container input {
+        height: 30px;
+        width: 48%;
+        margin-bottom: 3%;
+    }
+    
+    .name-email-select-area-container select {
+        height: 30px;
+        margin-bottom: 3%;
+    }
+
+    .contact-us-message {
+        margin-bottom: 1%;
+    }
+
+    .contact-us-text {
+        height: 100px;
+        width: 99.4%;
+    }
+
+    .contact-us-btns-container {
+        margin-bottom: 7%;
+    }
+
+    .contact-us-btns-container button {
+        width: 10%;
+    }
+    .about-us-first-container {
+        display: block;
+    }
+    .about-us-first-h-p-container {
+        max-width: 100%;
+    }
+    .about-us-first-img {
+        display: none;
+    }
+
+    .about-us-second-p-container  {
+        margin-bottom: -10%;
+    }
+
+    .about-us-second-p-container p {
+        font-style: italic;
+    }
+    .about-us-last-three-h-p-img-container {
+        display: block;
+        background-color: # F13312;
+    }
+    .about-us-last-three-h-p-img-container h3 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .about-us-header-thrid {
+        display: block;
+    }
+
+    .about-us-img-third-p {
+        display: flex;
+    }
+
+    .about-us-img-third-p img {
+        width: 25%;
+    }
+
+    .about-us-img-third-p p {
+        margin-left: 2%;
+    }
+
+    .about-us-fourth-p-img-container {
+        display: flex;
+    }
+
+    .about-us-fourth-p-img-container img {
+        margin-top: -20%;
+        margin-bottom: 7%;
+        width: 30%;
+    }
+    .about-us-last-p-container {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        margin-left: 27%;
+        margin-top: -5%;
+    }
+

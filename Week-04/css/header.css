@@ -29,9 +29,39 @@ header img {
     background: none;
 }
 
-@media (min-width:1024px){
+@media (min-width:480) {
+    header {
+        background-color: red;
+    }
+}
+
+@media (min-width:1024px) {
     header{
         width: 70%;
+        margin-top: 5%;
         float: right;
+        border-bottom: 4px solid #49A37B ;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .tittle-container {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .tittle-container  h1{
+        display:inline-block;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .tittle-container h2{
+        display: inline;
+        margin-left: 50px;
+        font-size: 12px;
+        font-weight: 400;
     }
 }
