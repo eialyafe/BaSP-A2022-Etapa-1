@@ -295,15 +295,73 @@ section{
         width: 10%;
     }
 
+    .about-us-first-h-p-container {
+        display: none;
+    }
 
+    .about-us-first-img {
+        display: none;
+    }
 
+    .about-us-second-p-h-container  {
+        display: none;
+    }
 
+    .about-us-last-three-h-p-img-container {
+        display: block;
+    }
 
+    .about-us-last-three-h-p-img-container h3 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .about-us-header-thrid {
+        display: block;
+    }
+
+    .about-us-img-third-p {
+        display: flex;
+    }
+
+    .about-us-img-third-p img {
+        width: 20%;
+    }
+
+    .about-us-img-third-p p {
+        margin-left: 2%;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    .about-us-fourth-p-img-container {
+        display: flex;
+        margin-bottom: 3%;
+    }
+
+    .about-us-fourth-p-img-container img {
+        margin-top: -20%;
+        margin-bottom: 10%;
+        margin-left: 2%;
+        width: 20%;
+    }
+
+    .about-us-last-p-container {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        margin-left: 22%;
+        margin-top: -2.5%;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .about-us-fourth-p-img-container p {
+        font-size: 10px;
+        text-align: justify;
+        width: 75%;
+    }
 }
-
-
-
-
 
 @media (min-width:1024px) {
     main {
@@ -373,7 +431,6 @@ section{
 
     .why-track-time div {
         justify-content: space-between;
-        background-color: transparent;
     }
 
     .cards-container {
@@ -388,24 +445,7 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .business-and-decision-container {
-        width: 48%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .boost-and-manage-container div {
-        width: 46%;
-        margin: 0px;
-        background-color: white;
-    }
-
-    .business-and-decision-container div {
-        width: 46%;
-        margin: 0px;
-        background-color: white;
+        background-color: #FFFFFF;
     }
 
     .name-email-container {
@@ -462,7 +502,6 @@ section{
     }
     .about-us-last-three-h-p-img-container {
         display: block;
-        background-color: #F13312;
     }
 
     .about-us-last-three-h-p-img-container h3 {

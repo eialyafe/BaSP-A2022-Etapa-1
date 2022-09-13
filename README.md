@@ -10,5 +10,10 @@ On second week, we took the landing page and created an html document based on i
 ## Week 03
 We review the html file done in the second week. So we corrected the errors that had remained. Then we styled the file with css
 
+## Week 04
+This week we took the html done in the previus weeks, and usingo CSS tools, and in specific flex, we made the landing page responsive for mobile, tablet and desktop version
+This is the link:
+    https://eialyafe.github.io/BaSP-A2022-Etapa-1/Week-04/index.html
+
 ## Author
 Eial Alalachvily
