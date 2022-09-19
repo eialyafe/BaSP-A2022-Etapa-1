@@ -30,14 +30,14 @@ aside{
         border: none;
     }
 
-    .second-sidebar{
+    .second-sidebar {
         width: 100%;
         height: 4100px;
         margin-top: 25px;
         background-color: #262862;
     }
 
-    .sidebarlist a{
+    .sidebarlist a {
         display: block;
         width: 85%;
         padding-top: 60px;
@@ -54,21 +54,21 @@ aside{
         margin-left: 20px;
     }
 
-    .get-in-touch-container h3{
+    .get-in-touch-container h3 {
         margin-bottom: 40px;
         border-bottom: 4px solid #49A37B;
     }
 
-    .get-in-touch-container p{
+    .get-in-touch-container p {
         font-size: 14px;
         text-align: justify;
     }
 
-    .contactdata{
+    .contactdata {
         margin-top: 100px;
     }
 
-    .contactdata p{
+    .contactdata p {
         display: inline;
         margin-left: 70px;
         font-size: 14px;
@@ -78,28 +78,28 @@ aside{
         border-bottom: 2px solid #49A37B;
     }
 
-    .address-data-container img{
+    .address-data-container img {
         margin-left: -10px;
     }
 
-    .address-data-container p{
+    .address-data-container p {
         position: relative;
         bottom: 20px;
         right: 20px;
         margin-left: 10%;
     }
 
-    .email-data-container{
+    .email-data-container {
         margin-top: 60px;
         border-bottom: 2px solid #49A37B;
     }
 
-    .email-data-container img{
+    .email-data-container img {
         margin-bottom: 15px;
         margin-left: 5px;
     }
 
-    .email-data-container p{
+    .email-data-container p {
         position: relative;
         bottom: 20px;
         margin-left: 10%;
@@ -110,11 +110,11 @@ aside{
         margin-left: 7%;
     }
 
-    .phone-data-container img{
+    .phone-data-container img {
         margin-top: 7%;
         margin-left: 8px;
     }
-    .phonedataphone-data-container p{
+    .phonedataphone-data-container p {
         position: relative;
         bottom: 25px;
         right: 8px;

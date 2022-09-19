@@ -1,7 +1,7 @@
 footer {
     width: 80%;
     margin: auto;
-    margin-top: -3%;
+    margin-top: 3%;
 }
 
 .footer-media-logos {
@@ -20,29 +20,7 @@ footer {
     justify-content: center;
 }
 
-@media (min-width:768px){
-
-    .footer-lists {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 3%;
-        margin-bottom: 1%;
-        border: none;
-    }
-
-    .footer-lists div {
-        width: 35%;
-        margin-left: 10%;
-    }
-
-    .company-list {
-        margin-left: -5%;
-    }
-
-    .support-list {
-        margin-left: -7%;
-    }
+@media (min-width:768px) {
 
     .footer-media-logos {
         margin-top: 10%;
@@ -54,34 +32,12 @@ footer {
     }
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
 
-    footer{
+    footer {
         float: right;
         width: 64%;
         margin-right: 2.5%;
-    }
-
-    .footer-lists {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 3%;
-        margin-bottom: 1%;
-        border: none;
-    }
-
-    .footer-lists div {
-        width: 35%;
-        margin-left: 10%;
-    }
-
-    .company-list {
-        margin-left: -5%;
-    }
-
-    .support-list {
-        margin-left: -7%;
     }
 
     .footer-media-logos {

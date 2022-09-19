@@ -23,7 +23,7 @@ header {
     margin: auto;
 }
 
-header button{
+header button {
     padding: 0px;
     background: none;
     border: none;
@@ -43,7 +43,7 @@ header img {
 
 @media (min-width:1024px) {
 
-    header{
+    header {
         width: 70%;
         float: right;
         margin-top: 5%;
@@ -59,13 +59,13 @@ header img {
         margin-bottom: 2%;
     }
 
-    .tittle-container  h1{
+    .tittle-container  h1 {
         display:inline-block;
         font-size: 40px;
         font-weight: 700;
     }
 
-    .tittle-container h2{
+    .tittle-container h2 {
         display: inline;
         margin-left: 50px;
         font-size: 12px;
