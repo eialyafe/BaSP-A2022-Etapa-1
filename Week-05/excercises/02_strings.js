@@ -28,8 +28,9 @@ var keepLast3Carachters = newSentence. substring(countLetters-3,countLetters);
 
 console.log (keepLast3Carachters);
 
-// d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y
-// las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
+// d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera
+// letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring,
+// toUpperCase, toLowerCase y el operador +).
 console.log ('EXCERCISE 2.d');
 
 var address = 'avenida brasil esquina libertad';
@@ -59,7 +60,8 @@ var firstLetter = twoWords. substring (0,1);
 var firstBlank = twoWords. indexOf (' ');
 var secondWordLetterIndex = (firstBlank+1);
 var secondWordLetter = twoWords. substring (secondWordLetterIndex,secondWordLetterIndex+1);
-var finalSentence = (firstLetter. toUpperCase() + (twoWords. substring (1,secondWordLetterIndex)). toLowerCase() + secondWordLetter. toUpperCase() + (twoWords. substring (secondWordLetterIndex+1)). toLowerCase());
+var finalSentence = (firstLetter. toUpperCase() + (twoWords. substring (1,secondWordLetterIndex)). toLowerCase()
++ secondWordLetter. toUpperCase() + (twoWords. substring (secondWordLetterIndex+1)). toLowerCase());
 
 console.log (finalSentence);
 
