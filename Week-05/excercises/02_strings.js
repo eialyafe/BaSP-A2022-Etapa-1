@@ -58,11 +58,9 @@ console.log ('EXCERCISE 2.f');
 var twoWords =  'we are learning javascript';
 var firstLetter = twoWords. substring (0,1);
 var firstBlank = twoWords. indexOf (' ');
-var secondWordLetterIndex = (firstBlank+1);
-var secondWordLetter = twoWords. substring (secondWordLetterIndex,secondWordLetterIndex+1);
+var secondWordLetterIndex = (firstBlank + 1);
+var secondWordLetter = twoWords. substring (secondWordLetterIndex,secondWordLetterIndex + 1);
 var finalSentence = (firstLetter. toUpperCase() + (twoWords. substring (1,secondWordLetterIndex)). toLowerCase()
-+ secondWordLetter. toUpperCase() + (twoWords. substring (secondWordLetterIndex+1)). toLowerCase());
++ secondWordLetter. toUpperCase() + (twoWords. substring (secondWordLetterIndex + 1)). toLowerCase());
 
 console.log (finalSentence);
-
-

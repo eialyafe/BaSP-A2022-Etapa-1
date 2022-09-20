@@ -28,4 +28,3 @@ var surnames = 'Gonzales Martinez';
 var lettersCant = (names,surnames);
 
 console.log ('Names and surnames contains ',lettersCant.length, ' letters');
-
