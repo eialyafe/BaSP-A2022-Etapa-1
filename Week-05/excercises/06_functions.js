@@ -63,10 +63,10 @@ console. log (additionInteger (2.5,3));
 console.log ('EXCERCISE 6.e');
 
 function numInvalid(num) {
-    if (typeof n !== 'number') {
+    if (typeof (num) !== 'number') {
         alert('You must enter a number');
         return NaN;
-    } else if (!numberIsInteger(num)) {
+    } else if (!validateInteger(num)) {
         alert('The number must be an integer');
         return Math.round(num);
     }
@@ -74,17 +74,18 @@ function numInvalid(num) {
 }
 console.log(numInvalid(2.72));
 console.log(numInvalid('hola'));
+console.log (numInvalid(2));
 
     function addition(num1, num2) {
     var num1Invalid = numInvalid(num1);
-    if (num1Invalid || Number.isNaN(numInvalid)) {
-        return numInvalid;
+    if (num1Invalid || Number.isNaN(num1Invalid)) {
+        return num1Invalid;
     }
     var num2Invalid = numInvalid(num2);
-    if (num2Invalid || Number.isNaN(numInvalid)) {
-        return numInvalid;
+    if (num2Invalid || Number.isNaN(num2Invalid)) {
+        return num2Invalid;
     }
-    return num1 + num2;
+    return n1 + n2;
 }
-var total = addition('hola', 3);
-console.log("Sum with a function: " + total);
+var result = addition(false, 10);
+console.log("Sum with a function: " + result);
