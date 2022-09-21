@@ -4,13 +4,7 @@ aside{
 @media (min-width: 1024px) {
     aside {
         display: block;
-        float: left;
         width: 30%;
-        margin-top: 40px;
-        margin-left: -0.6%;
-    }
-    .sidebarlist {
-        margin-top: 10%;
     }
 
     .search-input {
@@ -32,7 +26,7 @@ aside{
 
     .second-sidebar {
         width: 100%;
-        height: 4100px;
+        height: 100vh;
         margin-top: 25px;
         background-color: #262862;
     }

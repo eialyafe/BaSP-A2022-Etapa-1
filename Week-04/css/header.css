@@ -1,8 +1,8 @@
 header {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    border-bottom: 4px solid #49A37B ;
+    height: auto;
+    margin: 0px;
+    padding-bottom: 0.625rem;
+    border-bottom: 4px solid #49a37b;
 }
 
 .tittle-container {
@@ -44,10 +44,10 @@ header img {
 @media (min-width:1024px) {
 
     header {
-        width: 70%;
-        float: right;
-        margin-top: 5%;
-        border-bottom: 4px solid #49A37B ;
+        height: auto;
+        margin: 5%;
+        padding-bottom: 0.625rem;
+        border-bottom: 4px solid #49a37b;
     }
 
     header button {

@@ -1,18 +1,35 @@
-body  {
-    background-color: #373867;
-    font-family: "Roboto", sans-serif;
-    color: #FFFFFF;
-    font-weight: 400;
+body {
+  display: flex;
+  background-color: #373867;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-main-footer {
+    margin: 5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-main-footer {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-content: flex-end;
+    margin: 0px;
+  }
 }
