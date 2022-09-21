@@ -15,7 +15,7 @@ This week we took the html done in the previus weeks, and usingo CSS tools, and 
 This is the link:
     https://eialyafe.github.io/BaSP-A2022-Etapa-1/Week-04/index.html
 
-## Week 04
+## Week 05
 This week we took make the corrections to CSS pointed on the feedback. Alse we did the excercises of JavaScript.
 
 ## Author

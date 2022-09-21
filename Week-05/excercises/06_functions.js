@@ -72,7 +72,7 @@ function numInvalid(num) {
     }
     return false;
 }
-console.log(numInvalid(2.7));
+console.log(numInvalid(2.72));
 console.log(numInvalid('hola'));
 
     function addition(num1, num2) {
