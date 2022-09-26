@@ -1,29 +1,35 @@
 aside {
     display: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 @media (min-width: 1024px) {
     aside {
         display: block;
         width: 30%;
+        height: fit-content;
         border: 0.5px solid #262862;
+        background-color: #262862;
     }
 
     .first-sidebar {
         display: flex;
         justify-content: center;
-        margin-top: 5%;
+        background-color: #373867;;
     }
 
     .search-input {
         height: 40px;
+        width: 80%;
+        margin-top: 20%;
+        margin-bottom: 15%;
         background-color: #262862;
         border-radius: 5px;
         border: 1px solid #49A37B;
     }
 
     .search-btn {
-
         margin: 0px;
         border: none;
         background-color: transparent;
@@ -31,9 +37,9 @@ aside {
 
     .second-sidebar {
         width: 100%;
-        height: 100%;
-        margin-top: 25px;
+        margin-top: 15%;
         background-color: #262862;
+        margin-bottom: 70%;
     }
 
     .sidebarlist a {
@@ -41,7 +47,6 @@ aside {
         width: 85%;
         padding-top: 60px;
         margin-left: 20px;
-
         border-bottom: 2px solid #49A37B;
         font-size: 17px;
         text-decoration: none;

@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/sidebar.css">
-        <link rel="stylesheet" href="../css/log-in.css">
+        <link rel="stylesheet" href="../css/sign-up.css">
         <link rel="stylesheet" href="../css/footer.css">
-        <title>Log in</title>
+        <title>Sign up</title>
     </head>
     <body>
         <aside>
@@ -60,24 +60,40 @@
                 </div>
             </header>
             <main>
-                <div class="sign-in">
-                    <h2>Log In</h2>
+                <div class="sign-up">
+                    <h2>Sign up</h2>
                     <form>
-                        <div class="input-img-log-in">
-                            <img src="../img/mail-log-in.png" alt="Mail image">
-                            <input type="text" name="email"  placeholder="Email" class="form-input">
+                        <div class="sign-up-divs">
+                            <p>First Name</p>
+                            <input type="text" name="first-name" class="form-input">
                         </div>
-                        <div class="input-img-log-in">
+                        <div class="sign-up-divs">
+                            <p>Last Name</p>
+                            <input type="text" name="last-name" class="form-input">
+                        </div>
+                        <div class="sign-up-divs">
+                            <div class="p-img-form">
+                                <img src="../img/mail-log-in.png" alt="Mail image" class="email-img">
+                                <p>Email</p>
+                            </div>
+                            <input type="text" name="email" class="form-input">
+                        </div>
+                        <div class="sign-up-divs">
+                            <div class="p-img-form">
                             <img src="../img/Lock.png" alt="Lock image">
-                            <input type="text" name="password"  placeholder="Password" class="form-input">
+                            <p>Password</p>
+                            </div>
+                            <input type="text" name="password" class="form-input">
+                        </div>
+                        <div class="sign-up-divs">
+                            <div class="p-img-form-repeat">
+                            <img src="../img/Lock.png" alt="Lock image">
+                            <p>Repeat password</p>
+                            </div>
+                            <input type="text" name="repeat-password" class="form-input">
                         </div>
                     </form>
-                    <div class="remember-me">
-                        <input type="checkbox" name="remeber-me-chek-box">
-                        <p>Remember me</p>
-                    </div>
-                    <a href="www.trackgenix/forgotpassword.com" class="forgot-password">Forgot password?</a>
-                    <button><img src="../img/continue-btn.png" alt="Click here to continue"></button>
+                    <button><img src="../img/create-account-btn.png" alt="Click account"></button>
                 </div>
             </main>
             <footer>
