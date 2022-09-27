@@ -16,7 +16,7 @@ main {
 }
 
 form {
-    width: 80%;
+    width: 95%;
 }
 
 .sign-up h2 {
@@ -71,4 +71,22 @@ margin: 7%;
 
 .sign-up button img {
     max-width: 50%;
+}
+
+@media (min-width: 1024px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .p-img-form p {
+        margin-left: 10%;
+    }
+
+    .p-img-form-repeat p {
+        margin-left: 10%;
+
+    }
 }
