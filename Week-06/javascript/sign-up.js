@@ -23,9 +23,6 @@ window.onload = function() {
             stringHasLetter(string) &&
             stringDoesntHaveSpecialCharacters(string)) {
             return true;
-            console.log("password Correcta");
-        } else {
-            console.log("password incorrecta");
         }
     }
 
@@ -99,6 +96,16 @@ window.onload = function() {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     var repeatPassword = document.getElementById("repeat-password");
+    var nameVal = "validation";
+    var lastVal = "validation";
+    var dniVal = "validation";
+    var telephoneVal = "validation";
+    var addressVal = "validation";
+    var cityVal = "validation";
+    var postalcodeVal = "validation";
+    var emailVal = "validation";
+    var passwordVal = "validation"
+    var repeatPasswordVal = "validation"
 
     // FIRST NAME
 
@@ -108,12 +115,13 @@ window.onload = function() {
     pFirstNameWarning.classList.add("p-red-color");
 
     firstName.onblur = function() {
-        console.log(firstName.value);
         if (stringHasJustLetters(firstName.value) && moreThanXchars(3,firstName.value)) {
             firstName.classList.add("green-border");
+            nameVal = true;
         } else {
             firstName.classList.add("red-border");
-            pFirstNameWarning.textContent ="Name must contain at least 4 letters and must be just letters"
+            pFirstNameWarning.textContent ="Name must contain at least 4 letters and must be just letters";
+            nameVal = false;
         }
     }
 
@@ -133,9 +141,11 @@ window.onload = function() {
             console.log(lastName.value);
             if (stringHasJustLetters(lastName.value) && moreThanXchars(3,lastName.value)) {
                 lastName.classList.add("green-border");
+                lastVal = true;
             } else {
                 lastName.classList.add("red-border");
                 pLastNameWarning.textContent ="Last name must contain at least 4 letters and must be just letters"
+                lastVal = false;
             }
         }
 
@@ -155,9 +165,11 @@ window.onload = function() {
         console.log(lastName.value);
         if (stringHasJustNumbers(dni.value) && moreThanXchars(7,dni.value)) {
             dni.classList.add("green-border");
+            dniVal = true;
         } else {
             dni.classList.add("red-border");
             pDniWarning.textContent ="DNI must contain at least 8 numbers, and just numbers"
+            dniVal = false;
         }
     }
 
@@ -176,9 +188,11 @@ window.onload = function() {
     telephone.onblur = function() {
         if (stringHasJustNumbers(telephone.value) && Xchars(10,telephone.value)) {
             telephone.classList.add("green-border");
+            telephoneVal = true;
         } else {
             telephone.classList.add("red-border");
             pTelephoneWarning.textContent ="Telephone must contain  10 numbers, and just numbers"
+            telephone = false;
         }
     }
 
@@ -195,11 +209,13 @@ window.onload = function() {
     pAddressWarning.classList.add("p-red-color");
 
     address.onblur = function() {
-        if (validatePassword(address.value) && moreThanXchars(5,address.value) && stringHasSpace(address.value)) {
+        if (stringHasNumber(address.value) && stringHasLetter(address.value) && moreThanXchars(5,address.value) && stringHasSpace(address.value)) {
             address.classList.add("green-border");
+            addressVal = true;
         } else {
             address.classList.add("red-border");
-            pAddressWarning.textContent ="Address must contain at least 5 characters (numbers and letters), and space between"
+            pAddressWarning.textContent ="Address must contain at least 5 characters (numbers and letters), and space between";
+            addressVal = false;
         }
     }
 
@@ -218,9 +234,11 @@ window.onload = function() {
     city.onblur = function() {
         if (stringDoesntHaveSpecialCharacters(city.value) && moreThanXchars(3,city.value)) {
             city.classList.add("green-border");
+            cityVal = true;
         } else {
             city.classList.add("red-border");
             pCityWarning.textContent ="City must contain at least 4 characters (numbers and letters)"
+            city = false;
         }
     }
 
@@ -239,9 +257,11 @@ window.onload = function() {
     postalCode.onblur = function() {
         if ((stringHasJustNumbers(postalCode.value)) && ((Xchars(4,postalCode.value) || Xchars(5,postalCode.value)))) {
             postalCode.classList.add("green-border");
+            postalcodeVal = true;
         } else {
             postalCode.classList.add("red-border");
             pPostalCodeWarning.textContent ="Postal code must contain  4 or 5 characters (just numbers)"
+            postalcodeVal = false;
         }
     }
 
@@ -250,7 +270,7 @@ window.onload = function() {
         pPostalCodeWarning.textContent = "";
     }
 
-    //POSTAL CODE
+    //EMAIL
 
     var emailWarning = document.getElementById("email-warning");
     var pEmailWarning = document.createElement("p");
@@ -260,9 +280,11 @@ window.onload = function() {
     email.onblur = function() {
         if (emailExpression.test(email.value)) {
             email.classList.add("green-border");
+            emailVal = true;
         } else {
             email.classList.add("red-border");
             pEmailWarning.textContent ="Email must contain just numbers, letters and @ "
+            emailVal = false;
         }
     }
 
@@ -281,9 +303,11 @@ window.onload = function() {
     password.onblur = function() {
         if ((validatePassword(password.value)) && (moreThanXchars(7,password.value))) {
             password.classList.add("green-border");
+            passwordVal = true;
         } else {
             password.classList.add("red-border");
             pPasswordWarning.textContent ="Password must contain at least 8 characters (just numbers and letters) "
+            passwordVal = false;
         }
     }
 
@@ -302,9 +326,11 @@ window.onload = function() {
     repeatPassword.onblur = function() {
         if ((validatePassword(password.value)) && (moreThanXchars(7,password.value)) && ((password.value) == (repeatPassword.value))) {
             repeatPassword.classList.add("green-border");
+            repeatPassword = true;
         } else {
             repeatPassword.classList.add("red-border");
             pRepeatPasswordWarning.textContent ="Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals "
+            repeatPasswordVal = false;
         }
     }
 
@@ -313,5 +339,47 @@ window.onload = function() {
         pRepeatPasswordWarning.textContent = "";
     }
 
+    //BUTTON
 
+    var createButton = document.getElementById("create-btn");
+    createButton.onclick =function(e) {
+        e.preventDefault();
+        var wrong = "";
+        if (!nameVal) {
+            wrong =  " Name must contain at least 4 letters and must be just letters ";
+        }
+        if (!lastVal) {
+            wrong += " Last name must contain at least 4 letters and must be just letters ";
+        }
+        if (!dni) {
+            wrong += " DNI must contain at least 8 numbers, and just numbers ";
+        }
+        if (!telephoneVal) {
+            wrong += " Telephone must contain  10 numbers, and just numbers ";
+        }
+        if (!addressVal) {
+            wrong += " Address must contain at least 5 characters (numbers and letters), and space between ";
+        }
+        if (!cityVal) {
+            wrong += " City must contain at least 4 characters (numbers and letters) ";
+        }
+        if (!postalcodeVal) {
+            wrong += " Postal code must contain  4 or 5 characters (just numbers) "
+        }
+        if (!emailVal) {
+            wrong += " Email must contain just numbers, letters and @ "
+        }
+        if (!passwordVal) {
+            wrong += " Password must contain at least 8 characters (just numbers and letters) "
+        }
+        if (!repeatPasswordVal) {
+            wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals "
+        }
+        if (nameVal && lastVal && dniVal && telephoneVal && addressVal && cityVal && postalcodeVal && emailVal && passwordVal && repeatPasswordVal ) {
+            alert ("Name: " + firstName.value + " Last name: " + lastName.value + " DNI: " + dni.value +
+            " Date of birthday: " + birthdayDate.value + " Telephone: " + telephone.value + " Address: " + address.value + " City: " + city.value
+            + " Postañ code: " + postalCode.value + " email: " + email.value + "Password: " + password.value)
+        } else alert (wrong)
+    }
 }
+
