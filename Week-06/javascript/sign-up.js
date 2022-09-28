@@ -346,39 +346,39 @@ window.onload = function() {
         e.preventDefault();
         var wrong = "";
         if (!nameVal) {
-            wrong =  " Name must contain at least 4 letters and must be just letters ";
+            wrong =  " Name must contain at least 4 letters and must be just letters \n";
         }
         if (!lastVal) {
-            wrong += " Last name must contain at least 4 letters and must be just letters ";
+            wrong += " Last name must contain at least 4 letters and must be just letters \n";
         }
         if (!dni) {
-            wrong += " DNI must contain at least 8 numbers, and just numbers ";
+            wrong += " DNI must contain at least 8 numbers, and just numbers \n";
         }
         if (!telephoneVal) {
-            wrong += " Telephone must contain  10 numbers, and just numbers ";
+            wrong += " Telephone must contain  10 numbers, and just numbers \n";
         }
         if (!addressVal) {
-            wrong += " Address must contain at least 5 characters (numbers and letters), and space between ";
+            wrong += " Address must contain at least 5 characters (numbers and letters), and space between \n";
         }
         if (!cityVal) {
-            wrong += " City must contain at least 4 characters (numbers and letters) ";
+            wrong += " City must contain at least 4 characters (numbers and letters) \n";
         }
         if (!postalcodeVal) {
-            wrong += " Postal code must contain  4 or 5 characters (just numbers) "
+            wrong += " Postal code must contain  4 or 5 characters (just numbers) \n"
         }
         if (!emailVal) {
-            wrong += " Email must contain just numbers, letters and @ "
+            wrong += " Email must contain just numbers, letters and @ \n"
         }
         if (!passwordVal) {
-            wrong += " Password must contain at least 8 characters (just numbers and letters) "
+            wrong += " Password must contain at least 8 characters (just numbers and letters) \n"
         }
         if (!repeatPasswordVal) {
-            wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals "
+            wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals \n"
         }
         if (nameVal && lastVal && dniVal && telephoneVal && addressVal && cityVal && postalcodeVal && emailVal && passwordVal && repeatPasswordVal ) {
-            alert ("Name: " + firstName.value + " Last name: " + lastName.value + " DNI: " + dni.value +
-            " Date of birthday: " + birthdayDate.value + " Telephone: " + telephone.value + " Address: " + address.value + " City: " + city.value
-            + " Postañ code: " + postalCode.value + " email: " + email.value + "Password: " + password.value)
+            alert ("Name: " + firstName.value  + "\n" + "Last name: " + lastName.value + "\n" + " DNI: " + dni.value + "\n" +
+            " Date of birthday: " + birthdayDate.value + "\n" + " Telephone: " + telephone.value + "\n" + " Address: " + address.value + "\n" + " City: " + city.value
+            + "\n" + " Postañ code: " + postalCode.value + "\n" + " email: " + email.value + "\n" + "Password: " + password.value)
         } else alert (wrong)
     }
 }

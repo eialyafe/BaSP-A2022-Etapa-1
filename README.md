@@ -18,5 +18,8 @@ This is the link:
 ## Week 05
 This week we took make the corrections to CSS pointed on the feedback. Alse we did the excercises of JavaScript.
 
+## Week 06
+We designed the sign up and log in pages using html and CSS and also we added functionalities with JAvascript.
+
 ## Author
 Eial Alalachvily

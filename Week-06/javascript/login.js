@@ -89,9 +89,6 @@ window.onload = function() {
             stringHasLetter(string) &&
             stringDoesntHaveSpecialCharacters(string)) {
             return true;
-            console.log("password Correcta");
-        } else {
-            console.log("password incorrecta");
         }
     }
 
