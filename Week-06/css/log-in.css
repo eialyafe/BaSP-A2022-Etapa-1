@@ -84,7 +84,11 @@ main {
 .sign-in button img {
     max-width: 100%;
     margin-top: 10%;
-    margin-bottom: 20%;
+}
+
+.p-sign-up {
+    margin-bottom: 5%;
+    text-decoration: none;
 }
 
 @media (min-width:480px) {

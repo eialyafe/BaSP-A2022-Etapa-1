@@ -61,8 +61,6 @@ form {
 .sign-up button {
     padding: 0px;
     margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 10%;
     border-radius: 5px;
     border-color: transparent;
     color: transparent;
@@ -73,6 +71,10 @@ form {
     max-width: 50%;
 }
 
+.p-log-in {
+    margin-bottom: 5%;
+    text-decoration: none;
+}
 .warning  {
     display: flex;
     justify-content: center;
