@@ -27,8 +27,8 @@ window.onload = function() {
 
     var passwordDiv = document.getElementById("password-div");
     var pPassword = document.createElement("p");
-    pPassword.classList.add("p-red-color");
     passwordDiv.appendChild(pPassword);
+    pPassword.classList.add("p-red-color");
 
     password.onblur = function () {
         if (validatePassword(password.value)) {
@@ -60,12 +60,28 @@ window.onload = function() {
         } return false;
     }
 
+    function stringHasJustLetters(string) {
+        for (var i = 0; i < string.length; i++) {
+            if (string[i].toUpperCase() == string[i].toLowerCase()) {
+                return false;
+            }
+        } return true;
+    }
+
+    function stringHasJustNumbers(string) {
+        for (var i = 0; i <= string.length; i++) {
+            if (string[i] <"0" || string[i] >"9") {
+                return false;
+            }
+        } return true;
+    }
+
     function stringDoesntHaveSpecialCharacters(string) {
         for (var i = 0; i < string.length; i++) {
-            if (stringHasLetter(string [i]) || stringHasLetter(string [i])) {
-            return true;
+            if (!((stringHasJustLetters(string [i])) || (stringHasJustNumbers(string [i])))) {
+            return false;
             }
-        } return false;
+        } return true;
     }
 
     function validatePassword(string) {
