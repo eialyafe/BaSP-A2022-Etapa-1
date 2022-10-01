@@ -75,7 +75,7 @@ window.onload = function() {
     }
 
     function stringHasSpace(string) {
-        for (var i = 1; i < string.length; i++) {
+        for (var i = 1; i < (string.length); i++) {
             if (string[i] ==" ") {
                 return true;
             }
@@ -139,21 +139,21 @@ window.onload = function() {
     pLastNameWarning.classList.add("p-red-color");
 
     lastName.onblur = function() {
-            console.log(lastName.value);
-            if (stringHasJustLetters(lastName.value) && moreThanXchars(3,lastName.value)) {
-                lastName.classList.add("green-border");
-                lastVal = true;
-            } else {
-                lastName.classList.add("red-border");
-                pLastNameWarning.textContent ="Last name must contain at least 4 letters and must be just letters"
-                lastVal = false;
-            }
+        console.log(lastName.value);
+        if (stringHasJustLetters(lastName.value) && moreThanXchars(3,lastName.value)) {
+            lastName.classList.add("green-border");
+            lastVal = true;
+        } else {
+            lastName.classList.add("red-border");
+            pLastNameWarning.textContent ="Last name must contain at least 4 letters and must be just letters"
+            lastVal = false;
         }
+    }
 
     lastName.onfocus = function() {
-            lastName.classList.remove("red-border");
-            pLastNameWarning.textContent = "";
-        }
+        lastName.classList.remove("red-border");
+        pLastNameWarning.textContent = "";
+    }
 
     // DNI
 
@@ -192,8 +192,9 @@ window.onload = function() {
             telephoneVal = true;
         } else {
             telephone.classList.add("red-border");
+            console.log(stringHasJustNumbers(telephone.value));
             pTelephoneWarning.textContent ="Telephone must contain  10 numbers, and just numbers"
-            telephone = false;
+            telephoneVal = false;
         }
     }
 
@@ -234,12 +235,14 @@ window.onload = function() {
 
     city.onblur = function() {
         if (stringDoesntHaveSpecialCharacters(city.value) && moreThanXchars(3,city.value)) {
+            console.log(stringDoesntHaveSpecialCharacters(city.value));
+            console.log(moreThanXchars(3,city.value));
             city.classList.add("green-border");
             cityVal = true;
         } else {
             city.classList.add("red-border");
             pCityWarning.textContent ="City must contain at least 4 characters (numbers and letters)"
-            city = false;
+            cityVal = false;
         }
     }
 
