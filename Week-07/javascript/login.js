@@ -6,6 +6,7 @@ window.onload = function() {
     var password = document.getElementById("password");
 
     var emailDiv = document.getElementById("email-div");
+
     var pEmail = document.createElement("p");
     pEmail.classList.add("p-red-color");
     emailDiv.appendChild(pEmail);
@@ -96,7 +97,19 @@ window.onload = function() {
     continueButton.onclick =function(e) {
         e.preventDefault();
         if (validatePassword(password.value) && emailExpression.test(email.value) ) {
-            alert ("email: " + email.value + "  password: " + password.value)
+            alert ("email: " + email.value + "  password: " + password.value);
+            var url =  "https://basp-m2022-api-rest-server.herokuapp.com/login?email="+email.value+"&password="+password.value;
+            var promise = fetch(url);
+            promise
+                .then(function(data){
+                    return data.json()
+                })
+                .then(function(data) {
+                    alert("Logged succesfully \n"+ data.msg)
+                })
+                .catch (function(error){
+                    console.log(error)
+                })
         } else if ((validatePassword(password.value)) == "false" && (emailExpression.test(email.value)) == "false") {
                 alert ("Email must contain at least a number, a letter and none special characters " +
                     " Password must contain at least a number, a letter and none special characters")
