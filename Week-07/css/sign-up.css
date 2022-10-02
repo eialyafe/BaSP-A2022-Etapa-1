@@ -5,7 +5,7 @@ main {
 
 .sign-up {
     display: flex;
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,13 +15,9 @@ main {
     color: #262862;
 }
 
-form {
-    width: 95%;
-}
-
 .sign-up h2 {
     margin: 5%;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 5%;
     font-size: 36px;
 }
@@ -30,28 +26,35 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10%;
     margin: 7%;
+}
+
+.sign-up-divs p {
+    align-content: flex-end;
+    vertical-align: bottom;
+    background-color: red;
 }
 
 .p-img-form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 10%;
+    width: 20%;
 }
 
-.p-img-form-repeat {
+.p-img-form-email {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 20%;
 }
 
 .form-input {
-    width: 65%;
+    width: 75%;
     border: none;
     background-color: transparent;
-    border-bottom: solid 2px #212121
+    border-bottom: solid 2px #212121;
+    font-size: 25px;
+    text-align: center;
 }
 
 .email-img {
@@ -81,24 +84,41 @@ form {
 }
 
 .warning p {
-    width: 50%;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 @media (min-width: 1024px) {
     form {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
+    }
+
+    .column1 {
+        width: 55%;
+    }
+
+    .column2 {
+        width: 70%;
+    }
+
+    .column1 p {
+        font-size: 16px;
+    }
+
+    .column2 p {
+        font-size: 16px;
+    }
+
+    .form-input {
+        max-width: 60%;
+    }
+
+    .p-img-form-email p {
+        margin-left: 10%;
     }
 
     .p-img-form p {
+        width: 80%;
         margin-left: 10%;
-    }
-
-    .p-img-form-repeat p {
-        margin-left: 10%;
-
     }
 }

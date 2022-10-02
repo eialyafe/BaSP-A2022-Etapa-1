@@ -34,14 +34,6 @@ window.onload = function() {
             }
     }
 
-    function lessThanXchars (x,string) {
-        if (x > string.length) {
-            return true;
-            } else {
-                return false;
-            }
-    }
-
     function Xchars (x,string) {
         if (x == string.length) {
             return true;
@@ -91,7 +83,6 @@ window.onload = function() {
     var birthdayDate = document.getElementById("birthday-date");
     var telephone = document.getElementById("telephone");
     var address = document.getElementById("address");
-    var telephone = document.getElementById("telephone");
     var city = document.getElementById("city");
     var postalCode = document.getElementById("postal-code");
     var email = document.getElementById("email");
