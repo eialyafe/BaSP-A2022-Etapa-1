@@ -97,18 +97,22 @@ window.onload = function() {
     continueButton.onclick =function(e) {
         e.preventDefault();
         if (validatePassword(password.value) && emailExpression.test(email.value) ) {
-            alert ("email: " + email.value + "  password: " + password.value);
             var url =  "https://basp-m2022-api-rest-server.herokuapp.com/login?email="+email.value+"&password="+password.value;
             var promise = fetch(url);
             promise
-                .then(function(data){
-                    return data.json()
+                .then(function(response){
+                        return response.json();
                 })
                 .then(function(data) {
-                    alert("Logged succesfully \n"+ data.msg)
+                    console.log (data);
+                    if (data.success == true) {
+                        alert("Successfully login:\n" + data.msg);
+                    } else {
+                        alert("Login failed:\n" +data.msg);
+                    }
                 })
                 .catch (function(error){
-                    console.log(error)
+                    alert ('error: ' + '\n' + error)
                 })
         } else if ((validatePassword(password.value)) == "false" && (emailExpression.test(email.value)) == "false") {
                 alert ("Email must contain at least a number, a letter and none special characters " +

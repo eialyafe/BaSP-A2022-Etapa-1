@@ -319,12 +319,16 @@ window.onload = function() {
     pRepeatPasswordWarning.classList.add("p-red-color");
 
     repeatPassword.onblur = function() {
-        if ((validatePassword(password.value)) && (moreThanXchars(7,password.value)) && ((password.value) == (repeatPassword.value))) {
+        if ((passwordVal == true) && ((password.value) == (repeatPassword.value))) {
             repeatPassword.classList.add("green-border");
             repeatPassword = true;
         } else {
             repeatPassword.classList.add("red-border");
-            pRepeatPasswordWarning.textContent ="Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals "
+            if  (passwordVal !== true) {
+                pRepeatPasswordWarning.textContent ="Password must contain at least 8 characters (just numbers and letters)";
+            } else {
+                pRepeatPasswordWarning.textContent ="Password must be the same in both fields ";
+            }
             repeatPasswordVal = false;
         }
     }
@@ -359,22 +363,44 @@ window.onload = function() {
             wrong += " City must contain at least 4 characters (numbers and letters) \n";
         }
         if (!postalcodeVal) {
-            wrong += " Postal code must contain  4 or 5 characters (just numbers) \n"
+            wrong += " Postal code must contain  4 or 5 characters (just numbers) \n";
         }
         if (!emailVal) {
-            wrong += " Email must contain just numbers, letters and @ \n"
+            wrong += " Email must contain just numbers, letters and @ \n";
         }
         if (!passwordVal) {
-            wrong += " Password must contain at least 8 characters (just numbers and letters) \n"
+            wrong += " Password must contain at least 8 characters (just numbers and letters) \n";
         }
         if (!repeatPasswordVal) {
-            wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals \n"
+            wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals \n";
         }
         if (nameVal && lastVal && dniVal && telephoneVal && addressVal && cityVal && postalcodeVal && emailVal && passwordVal && repeatPasswordVal ) {
-            alert ("Name: " + firstName.value  + "\n" + "Last name: " + lastName.value + "\n" + " DNI: " + dni.value + "\n" +
-            " Date of birthday: " + birthdayDate.value + "\n" + " Telephone: " + telephone.value + "\n" + " Address: " + address.value + "\n" + " City: " + city.value
-            + "\n" + " Postañ code: " + postalCode.value + "\n" + " email: " + email.value + "\n" + "Password: " + password.value)
-        } else alert (wrong)
+            alert ("Name: " + firstName.value  + "\n" + "Last name: " + lastName.value + "\n" + "DNI: " + dni.value + "\n" +
+            "Date of birthday: " + birthdayDate.value + "\n" + "Telephone: " + telephone.value + "\n" + "Address: " + address.value + "\n" + "City: " + city.value
+            + "\n" + "Postal code: " + postalCode.value + "\n" + "email: " + email.value + "\n" + "Password: " + password.value);
+            var dd = birthdayDate.value.substring(8,10);
+            var mm = birthdayDate.value.substring(5,7);
+            var aaaa = birthdayDate.value.substring(0,4);
+            var dovVal = (dd+"/"+mm+"/"+aaaa);
+            var url =  "https://basp-m2022-api-rest-server.herokuapp.com/signup?name="+firstName.value+"&lastName="
+            +lastName.value+"&dni="+dni.value+"&dob="+dovVal+"&phone="+telephone.value+"&address="
+            +address.value+"&city="+city.value+"&zip="+postalCode.value+"&email="+email.value+"&password="+password.value;
+            var promise = fetch(url);
+            promise
+                .then(function(response){
+                        return response.json();
+                })
+                .then(function(data) {
+                    console.log (data);
+                    if (data.success == true) {
+                        alert("Successfully signed up:\n" + data.msg);
+                    } else {
+                        alert("Sign up failed:\n" +data.msg);
+                    }
+                })
+                .catch (function(error) {
+                    alert ('error: ' + '\n' + error)
+                })
+        } else alert (wrong);
     }
 }
-
