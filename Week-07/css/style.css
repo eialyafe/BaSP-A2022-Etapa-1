@@ -49,6 +49,7 @@ h3 {
 @media (min-width: 1024px) {
   body {
     display: flex;
+    margin: 0px;
   }
 
   .header-main-footer {

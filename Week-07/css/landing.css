@@ -422,10 +422,6 @@ section {
 }
 
 @media (min-width: 1024px) {
-  main {
-    margin: 5%;
-  }
-
   .timetracker {
     flex-direction: row-reverse;
     justify-content: space-between;
