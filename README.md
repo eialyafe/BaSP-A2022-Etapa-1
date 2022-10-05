@@ -21,5 +21,11 @@ This week we took make the corrections to CSS pointed on the feedback. Alse we d
 ## Week 06
 We designed the sign up and log in pages using html and CSS and also we added functionalities with JAvascript.
 
+## Week 07
+We wrote JS code to make a request HTTP for login and sign up pages. Also we made and alert showing if the request was succeeded and the information gotten from the server.
+Moreover for sing up page, if the request was succeeded the data is saved on the local storage and is recovered when the page is refreshed.
+If the request is not succeeded an alert will show the error with the information gotten from the server
+
+
 ## Author
 Eial Alalachvily
