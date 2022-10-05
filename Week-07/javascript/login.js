@@ -97,6 +97,7 @@ window.onload = function() {
     continueButton.onclick =function(e) {
         e.preventDefault();
         if (validatePassword(password.value) && emailExpression.test(email.value) ) {
+            continueButton.classList.remove("disable-btn");
             var url =  "https://basp-m2022-api-rest-server.herokuapp.com/login?email="+email.value+"&password="+password.value;
             var promise = fetch(url);
             promise
@@ -112,14 +113,8 @@ window.onload = function() {
                     }
                 })
                 .catch (function(error){
-                    alert ('error: ' + '\n' + error)
+                    alert ('error: ' + '\n' + error);
                 })
-        } else if ((validatePassword(password.value)) == "false" && (emailExpression.test(email.value)) == "false") {
-                alert ("Email must contain at least a number, a letter and none special characters " +
-                    " Password must contain at least a number, a letter and none special characters")
-        } else if ((validatePassword(password.value)) == "false") {
-            alert ("Password must contain at least a number, a letter and none special characters")
-        } else alert ("Email must contain at least a number, a letter and none special characters")
+        } else continueButton.classList.add("disable-btn");
     }
-
 }

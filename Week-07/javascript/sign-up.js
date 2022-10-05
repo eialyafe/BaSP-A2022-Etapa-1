@@ -1,5 +1,30 @@
 window.onload = function() {
 
+        // VAR DECLARATION
+
+        var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+        var firstName = document.getElementById("first-name");
+        var lastName = document.getElementById("last-name");
+        var dni = document.getElementById("dni");
+        var birthdayDate = document.getElementById("birthday-date");
+        var telephone = document.getElementById("telephone");
+        var address = document.getElementById("address");
+        var city = document.getElementById("city");
+        var postalCode = document.getElementById("postal-code");
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+        var repeatPassword = document.getElementById("repeat-password");
+        var nameVal = "validation";
+        var lastVal = "validation";
+        var dniVal = "validation";
+        var telephoneVal = "validation";
+        var addressVal = "validation";
+        var cityVal = "validation";
+        var postalcodeVal = "validation";
+        var emailVal = "validation";
+        var passwordVal = "validation"
+        var repeatPasswordVal = "validation"
+
     // FUNCTION DELARATION
 
     function stringHasNumber(string) {
@@ -74,30 +99,23 @@ window.onload = function() {
         } return false;
     }
 
-    // VAR DECLARATION
+    function loadLocalStorage () {
+        if (localStorage.length !==0) {
+            firstName.value = localStorage.getItem("name");
+            lastName.value = localStorage.getItem("last name");
+            dni.value = localStorage.getItem("dni");
+            birthdayDate.value = localStorage.getItem("dob");
+            telephone.value = localStorage.getItem("phone");
+            address.value = localStorage.getItem("address");
+            city.value = localStorage.getItem("city");
+            postalCode.value = localStorage.getItem("zip");
+            email.value = localStorage.getItem("email");
+            password.value = localStorage.getItem("password");
+            repeatPassword.value = localStorage.getItem("password");
+        }
+    }
 
-    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    var firstName = document.getElementById("first-name");
-    var lastName = document.getElementById("last-name");
-    var dni = document.getElementById("dni");
-    var birthdayDate = document.getElementById("birthday-date");
-    var telephone = document.getElementById("telephone");
-    var address = document.getElementById("address");
-    var city = document.getElementById("city");
-    var postalCode = document.getElementById("postal-code");
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
-    var repeatPassword = document.getElementById("repeat-password");
-    var nameVal = "validation";
-    var lastVal = "validation";
-    var dniVal = "validation";
-    var telephoneVal = "validation";
-    var addressVal = "validation";
-    var cityVal = "validation";
-    var postalcodeVal = "validation";
-    var emailVal = "validation";
-    var passwordVal = "validation"
-    var repeatPasswordVal = "validation"
+    loadLocalStorage();
 
     // FIRST NAME
 
@@ -375,9 +393,7 @@ window.onload = function() {
             wrong += " Password must contain at least 8 characters (just numbers and letters) and both passwords must be equals \n";
         }
         if (nameVal && lastVal && dniVal && telephoneVal && addressVal && cityVal && postalcodeVal && emailVal && passwordVal && repeatPasswordVal ) {
-            alert ("Name: " + firstName.value  + "\n" + "Last name: " + lastName.value + "\n" + "DNI: " + dni.value + "\n" +
-            "Date of birthday: " + birthdayDate.value + "\n" + "Telephone: " + telephone.value + "\n" + "Address: " + address.value + "\n" + "City: " + city.value
-            + "\n" + "Postal code: " + postalCode.value + "\n" + "email: " + email.value + "\n" + "Password: " + password.value);
+            createButton.classList.remove("disable-btn");
             var dd = birthdayDate.value.substring(8,10);
             var mm = birthdayDate.value.substring(5,7);
             var aaaa = birthdayDate.value.substring(0,4);
@@ -394,6 +410,16 @@ window.onload = function() {
                     console.log (data);
                     if (data.success == true) {
                         alert("Successfully signed up:\n" + data.msg);
+                        localStorage.setItem("name",firstName.value);
+                        localStorage.setItem("last name",lastName.value);
+                        localStorage.setItem("dni",dni.value);
+                        localStorage.setItem("dob",birthdayDate.value);
+                        localStorage.setItem("phone",telephone.value);
+                        localStorage.setItem("address",address.value);
+                        localStorage.setItem("city",city.value);
+                        localStorage.setItem("zip",postalCode.value);
+                        localStorage.setItem("email",email.value);
+                        localStorage.setItem("password",password.value);
                     } else {
                         alert("Sign up failed:\n" +data.msg);
                     }
@@ -401,6 +427,8 @@ window.onload = function() {
                 .catch (function(error) {
                     alert ('error: ' + '\n' + error)
                 })
-        } else alert (wrong);
+        } else createButton.classList.add("disable-btn");
     }
 }
+
+

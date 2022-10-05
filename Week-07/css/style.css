@@ -34,6 +34,12 @@ h3 {
 .p-transparent-color {
   color: transparent;
 }
+
+.disable-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media (min-width: 768px) {
   .header-main-footer {
     margin: 5%;
